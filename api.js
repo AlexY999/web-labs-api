@@ -8,9 +8,9 @@ router.get('/', (req, res) => {
 
 router.post('/register', productController.register);
 router.post('/login', productController.login);
-router.post('/createPost', productController.createPost);
-router.get('/getAllPosts', productController.getAllPosts);
+router.post('/delete-account', productController.deleteAccount);
+router.post('/posts', productController.createPost);
+router.get('/posts', productController.getAllPosts);
 router.post('/follow', productController.followToUser);
-
 
 module.exports = router;

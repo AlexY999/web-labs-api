@@ -10,8 +10,8 @@ app.use('/api', apiRouter);
 (async () => {
     try {
         await connectDb();
-        app.listen(3000, () => {
-            console.log('Server is listening on port 3000');
+        app.listen(3001, () => {
+            console.log('Server is listening on port 3001');
         });
     } catch (error) {
         console.error('Failed to connect to database:', error);
